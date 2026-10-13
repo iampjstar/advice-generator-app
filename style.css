@@ -1,0 +1,107 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/* Main advice card */
+.advice-card {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    padding: 48px 40px 72px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+
+/* Advice number */
+.advice-label {
+    color: hsl(150, 100%, 66%);
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+}
+
+/* Advice text */
+.advice-text {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+/* Divider image */
+.divider img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Dice button */
+#advice-button {
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+#advice-button img {
+    width: 24px;
+    height: 24px;
+}
+
+#advice-button:hover {
+    box-shadow: 0 0 35px hsl(150, 100%, 66%);
+}
+
+/* Footer attribution */
+.attribution {
+    margin-top: 64px;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+
+.attribution {
+    margin-top: 64px;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+.attribution a {
+    color: hsl(150, 100%, 66%);
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .advice-card {
+        padding: 40px 24px 64px;
+    }
+    #advice-text {
+        font-size: 24px;
+    }
+}
